@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Make Circular Images with a border-radius</title>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" 
+            rel="stylesheet" type="text/css">
+        <style>
+            .green-text {
+                color: green;
+            }
+            p {
+                font-size: 30px;
+                font-family: Lobster, monospace;
+            }
+            h2 {
+                font-family: monospace;
+            }
+            .small-image {
+                width: 500px;
+            }
+            .thin-brown-border {
+                border-color: brown;
+                border-width: 5px;
+                border-style: solid;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 class="green-text">TreePhotoApp</h2>
+        <main>
+            <p class="green-text">View more <a href="#">Tree Photos</a></p>
+            <a href="#"><img class="small-image thin-brown-border" src="tree.jpg" alt="Tree"></a>
+            <div>
+                <p>Parts of Tree</p>
+                <ul>
+                    <li>leaves</li>
+                    <li>branches</li>
+                    <li>trunch</li>
+                    <li>roots</li>
+                </ul>
+                <p>Things People like about trees</p>
+                <ol>
+                    <li>Shade</li>
+                    <li>Wood</li>
+                    <li>Make O2</li>
+                </ol>
+            </div>
+            <form action="/submit-tree-site">
+                <input type="text" placeholder="Enter Tree Site" required>
+                <br>
+                <label for="summer">
+                    <input id="summer" type="radio" name="season" checked>
+                    Summer
+                </label>
+                <br>
+                <label for="fall">
+                    <input id="fall" type="radio" name="season">
+                    Fall
+                </label>
+                <br>
+                <label for="Shade">
+                    <input id="Shade" type="checkbox" name="use" checked>
+                    Shade
+                </label>
+                <br>
+                <label for="Wood">
+                    <input id="Wood" type="checkbox" name="use">
+                    Wood
+                </label>
+                <br>
+                <label for="Animal">
+                    <input id="Animal" type="checkbox" name="use">
+                    Animal
+                </label>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>
